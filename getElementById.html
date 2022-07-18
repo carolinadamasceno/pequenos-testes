@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Get Element By Id</title>
+</head>
+
+<body>
+
+    <!--Input para receber texto digitado pelo usuário-->
+    <input type="text" placeholder="Digite seu nome" id="nomeinformado" required>
+
+    <!--Botão para executar a minha função e executar o script-->
+    <button onclick="minhaFuncao()">Clique aqui</button>
+
+    <!--Aqui será alocado o texto digitado pelo usuário após execução da função pelo clique do botão-->
+    <!--Funciona como uma label-->
+
+    <div id="resultado"></div>
+
+    <script>
+        function minhaFuncao() {
+            var nomeinformado = document.getElementById('nomeinformado').value;
+            document.getElementById('resultado').innerHTML = nomeinformado;
+        }
+    </script>
+
+</body>
+
+</html>
